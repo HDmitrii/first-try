@@ -210,6 +210,7 @@ hr{
 }
 
 .secion--devices{
+    margin-bottom: 40px;
     padding-bottom: 0;
     background: url("../images/divicesBG_02.jpg") 
     center no-repeat;
@@ -401,4 +402,88 @@ hr{
     bottom: -80px;
     right: 0;
     z-index: 1;
+}
+
+/* we do */
+
+.wedo{
+    display: flex;
+}
+
+.wedo_item{
+    width: 50%;
+}
+
+
+/* accordion */
+
+.accordion_item{
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.accordion_item.active 
+.accordion_content{
+    display: block;
+}
+
+.accordion_item.active 
+.accordion_header{
+    border-bottom-color:#e5e5e5;
+}
+
+.accordion_item.active 
+.accordion_header:after{
+    transform: translateY(-50%) rotate(-45deg);
+    margin-top: 5px;
+}
+
+
+
+.accordion_header{
+    padding: 15px 20px 15px 65px;
+    border-bottom: 1px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion_header:after{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    
+
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+
+    position:absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.accordin_icon{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.accordion_content{
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #999;
+    font-style: italic;
+    display: none;
+}
+
+.accordion_title{
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
 }
