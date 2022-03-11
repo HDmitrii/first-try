@@ -209,6 +209,13 @@ hr{
     padding: 80px 0;
 }
 
+.secion--devices{
+    padding-bottom: 0;
+    background: url("../images/divicesBG_02.jpg") 
+    center no-repeat;
+    background-size: cover;
+}
+
 .sectoin_header{
     width: 100%;
     max-width: 950px;
@@ -373,4 +380,25 @@ hr{
 .services_text{
     font-size: 15px;
     color: #999;
+}
+
+
+/* Devices */
+
+.devices{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices_item{
+    display: block;
+}
+
+.devices__item--iphone{
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    z-index: 1;
 }
